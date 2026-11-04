@@ -1,0 +1,23 @@
+{
+  // Shared compiler settings. Each workspace extends this and adds its own
+  // module/environment settings (Node for server, browser/bundler for client).
+  "compilerOptions": {
+    "target": "ES2023",
+    "lib": ["ES2023"],
+
+    // Type safety
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // Module hygiene: `import type` must be used for type-only imports,
+    // so type imports are always erased at runtime.
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  }
+}
