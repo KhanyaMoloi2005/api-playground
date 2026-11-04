@@ -1,0 +1,11 @@
+{
+  // vite.config.ts runs in Node, not the browser, so it gets Node types.
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "types": ["node"],
+    "noEmit": true
+  },
+  "include": ["vite.config.ts"]
+}

@@ -1,0 +1,5 @@
+{
+  // Production build: same settings, but test files are not compiled into dist/.
+  "extends": "./tsconfig.json",
+  "exclude": ["src/**/*.test.ts"]
+}

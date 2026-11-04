@@ -1,0 +1,13 @@
+{
+  // Used by the editor, `npm run typecheck`, and tests. Covers src + tests.
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    // Node's native ESM rules: relative imports need a `.js` extension.
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "types": ["node"],
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src"]
+}
